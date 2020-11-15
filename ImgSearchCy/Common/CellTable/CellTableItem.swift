@@ -15,6 +15,8 @@ class CellTableItem: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        self.imgThumb.layer.cornerRadius = 5
+        self.buttonPrice.layer.cornerRadius = 5
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
