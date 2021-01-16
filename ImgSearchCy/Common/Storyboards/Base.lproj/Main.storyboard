@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYa-h3-z9R">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYa-h3-z9R">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="collection view cell content view" minToolsVersion="11.0"/>
@@ -31,14 +31,14 @@
             <objects>
                 <viewController storyboardIdentifier="VCListHeroes" wantsFullScreenLayout="YES" automaticallyAdjustsScrollViewInsets="NO" id="n9U-av-sYy" customClass="VCListMenu" customModule="ImgSearchCy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="e7v-wS-gkc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="08K-BA-ZFa">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                <rect key="frame" x="0.0" y="-48" width="414" height="822"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" contentInsetAdjustmentBehavior="never" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="1" sectionFooterHeight="1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hdt-4c-6VN">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="822"/>
                                     </tableView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -53,12 +53,13 @@
                         <viewLayoutGuide key="safeArea" id="HL1-Tt-Vxc"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="08K-BA-ZFa" firstAttribute="top" secondItem="e7v-wS-gkc" secondAttribute="top" id="8Kg-H3-uhc"/>
+                            <constraint firstItem="08K-BA-ZFa" firstAttribute="top" secondItem="e7v-wS-gkc" secondAttribute="top" constant="-48" id="8Kg-H3-uhc"/>
                             <constraint firstItem="08K-BA-ZFa" firstAttribute="bottom" secondItem="HL1-Tt-Vxc" secondAttribute="bottom" id="a4E-Tw-z6r"/>
                             <constraint firstItem="08K-BA-ZFa" firstAttribute="leading" secondItem="HL1-Tt-Vxc" secondAttribute="leading" id="gH0-zi-gJh"/>
                             <constraint firstItem="HL1-Tt-Vxc" firstAttribute="trailing" secondItem="08K-BA-ZFa" secondAttribute="trailing" id="vw8-iu-73g"/>
                         </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" bottom="YES"/>
                     <navigationItem key="navigationItem" id="9EU-L7-Ouo"/>
                     <connections>
                         <outlet property="table" destination="Hdt-4c-6VN" id="xLg-Ia-o1B"/>

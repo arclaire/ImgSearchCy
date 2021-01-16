@@ -26,3 +26,6 @@ class CellTableItem: UITableViewCell {
     }
     
 }
+
+// loop iterating over characters
+
